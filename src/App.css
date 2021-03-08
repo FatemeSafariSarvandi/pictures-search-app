@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .App {
+    font-family: 'DotGothic16', sans-serif;
   }
-  to {
-    transform: rotate(360deg);
+  body {
+    background: rgb(78, 9, 121);
+    background: linear-gradient(
+      96deg,
+      #97d9e1 0%,
+      rgb(22, 130, 150) 50%,
+      rgb(9, 65, 77) 100%
+    );
   }
-}
+  #number-of-image{
+    text-align: center;
+    border: 4px solid rgb(153, 149, 149);
+    background-color: rgb(9, 6, 49);
+    color: rgb(202, 199, 199);
+    border-radius: 1px;
+    padding: 5px;
+    width: 10%;
+    margin: 5px 5px 15px 5px;
+  }
+  .searchbar-container {
+    justify-content: center;
+    min-width: 90%;
+    margin: 20px;
+  }
+  
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(223, 238, 240);
+    box-shadow: 2px 5px 20px rgba(95, 95, 95, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: none;
+    padding-top: 20px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+  }
+  .search-form input {
+    font-size: large;
+    border: 1px solid rgba(0, 0, 0, 0.067);
+    width: 95%;
+    height: 5vh;
+    outline: none;
+  }
+  .search-form button{
+    font-size: large;
+    border: 2px solid rgba(0, 0, 0, 0.067);
+    background-color: rgb(40, 148, 156);
+    color: white;
+    width: 30%;
+    height: 5vh;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 10px;
+  }
+  .search-form button:hover{
+    background-color: rgb(40, 40, 156);
+  }
+  
